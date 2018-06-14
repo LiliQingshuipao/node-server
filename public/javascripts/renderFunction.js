@@ -1,9 +1,9 @@
 const renderFunction = ({html,js,less}) => {
     
-    // let script = `<script>${js}</script>`
+    var script = `<script>${js}</script>`
     var css = `<style>${less}</style>`
-    // let body =  `${html}${script}`
-    var html = `<!DOCTYPE html><html><head>${css}</head><body>${html}</body></html>`;
+    var body =  `${html}${script}`
+    var html = `<!DOCTYPE html><html><head>${css}</head><body>${body}</body></html>`;
     return {
         name: html
     }
